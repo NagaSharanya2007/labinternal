@@ -4,7 +4,7 @@
 <html>
 <head>
 
-    <title>Gym Membership Management System</title>
+    <title>Membership Plans - Gym Membership</title>
 
     <style>
 
@@ -17,7 +17,7 @@
         header {
             background-color: #2e7d32;
             color: white;
-            padding: 30px;
+            padding: 25px;
             text-align: center;
         }
 
@@ -35,19 +35,30 @@
         }
 
         .container {
-            width: 80%;
-            margin: 50px auto;
-            text-align: center;
+            width: 90%;
+            margin: 35px auto;
         }
 
-        .card {
+        table {
+            width: 100%;
+            border-collapse: collapse;
             background-color: white;
-            padding: 35px;
             box-shadow: 0 2px 8px #cccccc;
         }
 
-        h2 {
-            color: #2e7d32;
+        th, td {
+            padding: 14px;
+            border: 1px solid #dddddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: #2e7d32;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f8f8;
         }
 
     </style>
@@ -58,9 +69,11 @@
 
 <header>
 
-    <h1>Gym Membership Management System</h1>
+    <h1>Membership Plans</h1>
 
-    <p>Manage your fitness membership with ease</p>
+    <p>
+        Choose a membership plan that suits your fitness goals
+    </p>
 
 </header>
 
@@ -78,21 +91,89 @@
 
 <div class="container">
 
-    <div class="card">
+    <table>
 
-        <h2>Welcome to Our Fitness Center</h2>
+        <tr>
 
-        <p>
-            Explore our membership plans and choose a plan
-            that suits your fitness goals.
-        </p>
+            <th>Membership ID</th>
 
-        <p>
-            New users can register, while existing members
-            can log in to access the system.
-        </p>
+            <th>Plan Name</th>
 
-    </div>
+            <th>Duration</th>
+
+            <th>Membership Fee</th>
+
+            <th>Membership Type</th>
+
+            <th>Membership Status</th>
+
+        </tr>
+
+        <tr>
+
+            <td>M101</td>
+
+            <td>Basic</td>
+
+            <td>1 Month</td>
+
+            <td>₹1,000</td>
+
+            <td>Monthly</td>
+
+            <td>Active</td>
+
+        </tr>
+
+        <tr>
+
+            <td>M102</td>
+
+            <td>Standard</td>
+
+            <td>3 Months</td>
+
+            <td>₹2,500</td>
+
+            <td>Quarterly</td>
+
+            <td>Active</td>
+
+        </tr>
+
+        <tr>
+
+            <td>M103</td>
+
+            <td>Premium</td>
+
+            <td>6 Months</td>
+
+            <td>₹4,500</td>
+
+            <td>Half-Yearly</td>
+
+            <td>Active</td>
+
+        </tr>
+
+        <tr>
+
+            <td>M104</td>
+
+            <td>Annual</td>
+
+            <td>12 Months</td>
+
+            <td>₹8,000</td>
+
+            <td>Yearly</td>
+
+            <td>Active</td>
+
+        </tr>
+
+    </table>
 
 </div>
 
